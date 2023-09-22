@@ -26,29 +26,55 @@ A full subtractor is a combinational circuit that performs subtraction involving
 Diff = A ⊕ B ⊕ Bin B = A'Bin + A'B + BBin
 
 ## Procedure
+Connect the supply (+5V) to the circuit 
+Switch ON the main switch 
+If the output is 1,then the led glows.
 
-
-
-Write the detailed procedure here 
 
 
 ## Program:
 /*
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: v.sreeja
+RegisterNumber:  212222230169
 */
-
+module half_sub(a,b,diff,b_out);
+input a,b;
+wire d;
+output diff,b_out;
+xor (diff,a,b);
+not (d,a);
+and (b_out,d,b);
+endmodule
+2.For FULL SUBTRACTOR:
+module full_sub(b_out,diff,a,b,c_in);
+output b_out,diff;
+input a,b,c_in;
+wire w1,w4,w5,w6;
+xor (diff,a,b,c_in);
+not (w1,a);
+and (w4,w1,b);
+and (w5,w1,c_in);
+and (w6,b,c_in);
+or (b_out,w4,w5,w6);
+endmodule
 ## Output:
 
 ## Truthtable
+![Screenshot (367)](https://github.com/VelasiriSreeja/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118344328/ebcfec14-cb13-4099-849b-a72d238574ff)
+![Screenshot (368)](https://github.com/VelasiriSreeja/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118344328/1ea87286-89c2-4851-aab0-87efd8c4c24e)
 
 
 
 ##  RTL realization
+![Screenshot (369)](https://github.com/VelasiriSreeja/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118344328/21acdb99-b34d-4034-9840-95d8a5535794)
+![Screenshot (370)](https://github.com/VelasiriSreeja/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118344328/0564305c-0cc7-4b52-ae7d-ad61e5c42c0b)
 
 
 ## Timing diagram 
+![Screenshot (371)](https://github.com/VelasiriSreeja/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118344328/29373cab-e318-46a7-b18b-077bb2ac14ac)
+![Screenshot (372)](https://github.com/VelasiriSreeja/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118344328/bb39aded-7fef-4c0d-bec2-4c16c7978d98)
+
 
 ## Result:
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
