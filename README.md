@@ -26,11 +26,8 @@ A full subtractor is a combinational circuit that performs subtraction involving
 Diff = A ⊕ B ⊕ Bin B = A'Bin + A'B + BBin
 
 ## Procedure
-Connect the supply (+5V) to the circuit 
-Switch ON the main switch 
-If the output is 1,then the led glows.
-
-
+1.Connect the supply (+5V) to the circuit 
+2.Switch ON the main switch (If the output is 1,then the led glows.)
 
 ## Program:
 /*
@@ -61,18 +58,35 @@ endmodule
 ## Output:
 
 ## Truthtable
+ Half Subtractor
+ 
 ![Screenshot (367)](https://github.com/VelasiriSreeja/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118344328/ebcfec14-cb13-4099-849b-a72d238574ff)
+
+Full Subtractor
+
 ![Screenshot (368)](https://github.com/VelasiriSreeja/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118344328/1ea87286-89c2-4851-aab0-87efd8c4c24e)
 
 
 
 ##  RTL realization
+
+ Half Subtractor
+ 
 ![Screenshot (369)](https://github.com/VelasiriSreeja/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118344328/21acdb99-b34d-4034-9840-95d8a5535794)
+
+Full Subtractor
+
 ![Screenshot (370)](https://github.com/VelasiriSreeja/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118344328/0564305c-0cc7-4b52-ae7d-ad61e5c42c0b)
 
 
 ## Timing diagram 
+
+ Half Subtractor
+ 
 ![Screenshot (371)](https://github.com/VelasiriSreeja/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118344328/29373cab-e318-46a7-b18b-077bb2ac14ac)
+
+Full Subtractor
+
 ![Screenshot (372)](https://github.com/VelasiriSreeja/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118344328/bb39aded-7fef-4c0d-bec2-4c16c7978d98)
 
 
